@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131514">
+  <meta name="description" content="Boundary Lab. Explore source, trust boundaries, and evidence in an interactive guide to security audits, based on Cloudflare security-audit-skill.">
+  <meta property="og:title" content="Boundary Lab — Find the gaps. Prove the risk.">
+  <meta property="og:description" content="Six audit phases. Eleven security domains. Evidence before conclusions. An independent, interactive security guide.">
+  <meta property="og:url" content="https://speddiikga-code.github.io/boundary-lab/">
+  <meta property="og:type" content="website">
+  <title>Boundary Lab — Security, grounded in evidence</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Boundary Lab home"><span class="brand-symbol" aria-hidden="true">b<span>✳</span></span><span>BOUNDARY<span class="brand-line">SECURITY LAB</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#workflow">Workflow</a><a href="#domains">Security domains</a><a href="#report">Sample report</a></nav>
+    <div class="header-actions"><a class="source-link" href="https://github.com/speddiikga-code/boundary-lab" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><button class="button small orange" data-install>Get started <span aria-hidden="true">↗</span></button><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden><a href="#workflow">Workflow</a><a href="#domains">Security domains</a><a href="#report">Sample report</a><button data-install>Get started ↗</button></nav>
+  </header>
+  <main id="main">
+    <section class="hero section-dark" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> OPEN-SOURCE SECURITY INTELLIGENCE</p>
+          <h1 id="hero-title">Find the gaps.<br><span>Prove the risk.</span></h1>
+          <p class="hero-description">Read the code. Question the boundary. Follow the evidence.<br class="desktop-br"> A six-phase security audit workflow<br class="desktop-br"> for your coding agent.</p>
+          <div class="hero-cta"><a class="button orange" href="#workflow">Explore the workflow <span aria-hidden="true">↗</span></a><button class="button ghost" data-install>Get started <span aria-hidden="true">→</span></button></div>
+          <div class="hero-credit"><span class="tiny-cross" aria-hidden="true">✳</span><span>Built on Cloudflare <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener noreferrer">security-audit-skill ↗</a><small>Independent English guide · MIT License</small></span></div>
+        </div>
+        <div class="hero-visual" aria-label="Audit workflow connecting source, trust boundaries, and evidence">
+          <div class="visual-top"><span><i></i> BOUNDARY / SYSTEM 01</span><span>GUIDE MODE</span></div>
+          <div class="orbital-stage">
+            <div class="crosshair top-left">+</div><div class="crosshair bottom-right">+</div>
+            <svg class="orbital-svg" viewBox="0 0 520 460" fill="none" aria-hidden="true">
+              <defs><radialGradient id="glow"><stop stop-color="#c5f467" stop-opacity=".18"/><stop offset="1" stop-color="#c5f467" stop-opacity="0"/></radialGradient><linearGradient id="edge" x1="130" y1="120" x2="360" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#d4ff88"/><stop offset="1" stop-color="#526a30"/></linearGradient></defs>
+              <circle cx="260" cy="224" r="200" fill="url(#glow)"/><g class="orbit-track"><ellipse cx="260" cy="224" rx="205" ry="78" stroke="#c5f467" stroke-opacity=".38" transform="rotate(-35 260 224)"/><ellipse cx="260" cy="224" rx="205" ry="78" stroke="#8b918b" stroke-opacity=".3" transform="rotate(35 260 224)"/><circle cx="260" cy="224" r="156" stroke="#666c65" stroke-dasharray="3 8" stroke-opacity=".3"/></g>
+              <path d="M260 104 363 161v120L260 341 157 281V161Z" fill="#191d19" stroke="url(#edge)" stroke-width="1.5"/><path d="m260 117 91 52v105l-91 53-91-53V169Z" stroke="#c5f467" stroke-opacity=".12"/><path d="M260 153c-18 14-35 21-54 24v52c0 39 30 61 54 74 24-13 54-35 54-74v-52c-19-3-36-10-54-24Z" fill="#b5e15b" fill-opacity=".1" stroke="#cbf57c" stroke-width="2"/><path d="m237 226 16 16 33-36" stroke="#cbf57c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <g class="orbit-signal"><circle cx="94" cy="130" r="5" fill="#c5f467"/><circle cx="94" cy="130" r="12" stroke="#c5f467" stroke-opacity=".3"/></g><circle cx="425" cy="321" r="4" fill="#bccbb9"/><path d="M260 69v23m0 264v24M91 224h22m295 0h22" stroke="#6b7467" stroke-width="1"/>
+            </svg>
+            <span class="orbit-label label-source"><i></i> SOURCE</span><span class="orbit-label label-boundary"><i></i> TRUST BOUNDARY</span><span class="orbit-label label-evidence"><i></i> EVIDENCE</span>
+            <span class="coordinate coord-left">SOURCE → CLAIM<br>CLAIM → PROOF</span><span class="coordinate coord-right">EN EDITION<br>VOL. 001</span>
+          </div>
+          <div class="visual-console"><span class="console-marker">↳</span><div><code>source → boundary → evidence</code><p>A finding is only as strong as its evidence.</p></div><span class="console-indicator" aria-hidden="true">▥</span></div>
+          <div class="visual-caption"><span>WORKFLOW VISUALIZATION</span><span>ILLUSTRATION · NOT A LIVE SCAN</span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span><span>LESS NOISE. MORE EVIDENCE.</span></div>
+    </section>
+    <section class="metrics" aria-label="Inside the guide"><div class="container metrics-grid"><div><strong>06<span> /</span></strong><p>Audit phases<small>RECON TO REPORT</small></p></div><div><strong>11<span> /</span></strong><p>Security domains<small>ACROSS THE STACK</small></p></div><div><strong>03<span> /</span></strong><p>Distinct verdicts<small>EVIDENCE FIRST</small></p></div><div class="metrics-note"><span class="mini-mark">✳</span><p>Better security starts<br><b>with better questions.</b></p></div></div></section>
+    <section id="workflow" class="section workflow-section">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow muted">01 / THE WORKFLOW</p><h2>From suspicion to evidence.<br><span class="muted-text">Every step earns its conclusion.</span></h2></div><p>Separate agents investigate and verify.<br>Explore the evidence each phase leaves behind.</p></div>
+        <div class="workflow-layout"><div id="phase-tabs" class="phase-tabs" role="tablist" aria-label="Audit phases" aria-orientation="vertical"></div><div id="phase-panel" class="phase-panel" role="tabpanel" tabindex="0"></div></div>
+      </div>
+    </section>
+    <section id="domains" class="section domains-section">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow muted">02 / ATTACK SURFACE LIBRARY</p><h2>See beyond the obvious.<br><span class="muted-text">Explore every boundary.</span></h2></div><p>From the browser to AI. From builds to binaries.<br>Find the specialist guide your project needs.</p></div>
+        <div class="library-toolbar"><div class="filter-group" role="group" aria-label="Filter security domains"><button class="filter active" data-filter="all" aria-pressed="true">All <span>11</span></button><button class="filter" data-filter="app" aria-pressed="false">App & web</button><button class="filter" data-filter="infra" aria-pressed="false">Infra & data</button><button class="filter" data-filter="ai" aria-pressed="false">AI · LLM</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="domain-search" type="search" placeholder="Search a domain" aria-label="Search security domains"><kbd>/</kbd></label></div>
+        <p id="result-count" class="sr-only" aria-live="polite"></p><div id="domain-grid" class="domain-grid"></div><div id="empty-state" class="empty-state" hidden><span>⌕</span><h3>No matching domains.</h3><p>Try another search term or filter.</p><button id="reset-search" class="button dark">Reset search ↗</button></div>
+        <div class="library-footnote"><span>Each card opens the original specialist guide.</span><a href="https://github.com/cloudflare/security-audit-skill/tree/main/skills/security-audit" target="_blank" rel="noopener noreferrer">Browse all source guides ↗</a></div>
+      </div>
+    </section>
+    <section id="report" class="section section-dark report-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">03 / EVIDENCE, NOT ASSUMPTIONS</p><h2>Every finding.<br><span class="orange-text">A clear chain of evidence.</span></h2></div><p>Confirmed, unresolved, or disproved.<br>See what makes each verdict different.</p></div>
+      <div class="report-workbench"><div class="workbench-header"><span><i class="status-dot"></i> FINDINGS EXPLORER</span><span class="demo-label">EDUCATIONAL SAMPLE · FICTIONAL DATA</span></div><div class="report-body"><div class="finding-list" role="tablist" aria-label="Example audit verdicts" aria-orientation="vertical"><button id="finding-confirmed" class="finding active" role="tab" aria-selected="true" aria-controls="finding-detail" data-verdict="confirmed"><span class="finding-index">01</span><span><span class="verdict confirmed">CONFIRMED</span><strong>Cross-tenant document access</strong><small>A demonstrated boundary violation</small></span><span class="finding-arrow">↗</span></button><button id="finding-needs_validation" class="finding" role="tab" aria-selected="false" aria-controls="finding-detail" data-verdict="needs_validation" tabindex="-1"><span class="finding-index">02</span><span><span class="verdict pending">NEEDS VALIDATION</span><strong>An unverified gateway policy</strong><small>A missing fact outside the source</small></span><span class="finding-arrow">↗</span></button><button id="finding-rejected" class="finding" role="tab" aria-selected="false" aria-controls="finding-detail" data-verdict="rejected" tabindex="-1"><span class="finding-index">03</span><span><span class="verdict rejected">REJECTED</span><strong>A blocked input path</strong><small>An existing control stops the attack</small></span><span class="finding-arrow">↗</span></button></div><div id="finding-detail" class="finding-detail" role="tabpanel" aria-labelledby="finding-confirmed" tabindex="0"></div></div><div class="report-bottom"><span>Fictional scenarios, created to explain the method.</span><button id="download-sample">Download sample <span aria-hidden="true">↓</span></button></div></div>
+    </div></section>
+    <section id="start" class="section start-section"><div class="container start-grid"><div><p class="eyebrow muted">04 / START WITH YOUR CODE</p><h2>Take your next review<br>a little deeper.</h2><p class="start-description">Bring the skill to your coding agent.<br>Start with the architecture. Finish with evidence.</p><button class="button dark" data-install>Open install guide ↗</button><div class="requirements"><span>TOOL-USE MODEL</span><span>PARALLEL AGENTS</span><span>NODE.JS</span></div></div><div id="faq-list" class="faq-list"></div></div></section>
+    <section class="closing"><div class="container"><p>READ THE CODE. QUESTION THE BOUNDARY.</p><h2>Trust begins <em>with proof.</em></h2><a href="#workflow" class="closing-arrow" aria-label="Explore the audit workflow">↗</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-top"><a class="brand" href="#"><span class="brand-symbol" aria-hidden="true">b<span>✳</span></span><span>BOUNDARY<span class="brand-line">SECURITY LAB</span></span></a><p>An independent, interactive guide based on<br>Cloudflare security-audit-skill.</p><div><a href="https://github.com/speddiikga-code/boundary-lab" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener noreferrer">Original project ↗</a><a href="./ENGLISH-ONLY-PROMPT.md">English-only prompt ↗</a><a href="./LICENSE">MIT License ↗</a></div></div><div class="container footer-bottom"><span>© 2026 Boundary Lab. Original skill © Cloudflare, Inc.</span><span>DESIGNED FOR CURIOSITY. BUILT ON EVIDENCE.</span><a href="#" aria-label="Back to top">↑</a></div></footer>
+  <dialog id="install-dialog" aria-labelledby="install-title"><div class="dialog-top"><span class="eyebrow muted">GET STARTED / 01</span><button class="dialog-close" aria-label="Close install guide">×</button></div><h2 id="install-title">Give your agent<br>a security perspective.</h2><p>Install the original Cloudflare skill with the command below.<br>This website is a guide; audits run in your coding environment.</p><div class="install-tabs" role="tablist" aria-label="Install scope"><button class="active" role="tab" id="install-project" aria-selected="true" aria-controls="install-panel" data-scope="project">This project</button><button role="tab" id="install-global" aria-selected="false" aria-controls="install-panel" data-scope="global" tabindex="-1">All projects</button></div><div id="install-panel" role="tabpanel" aria-labelledby="install-project"><div class="command-box"><code id="install-command"></code><button id="copy-install" aria-label="Copy install command">Copy</button></div></div><ol class="install-steps"><li><span>01</span>Use a coding agent with tool use and parallel agents.</li><li><span>02</span>Install the skill in your terminal, then open your repository.</li><li><span>03</span>Ask: <code>security audit this codebase</code></li></ol><div class="install-note">Executing target code requires an OS sandbox with network, write, and resource limits. When validation is unavailable, record the unresolved facts and the next checks.</div><a class="text-link" href="https://github.com/cloudflare/security-audit-skill#installation" target="_blank" rel="noopener noreferrer">Original installation guide ↗</a></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

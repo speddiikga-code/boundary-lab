@@ -1,0 +1,67 @@
+{
+  "title": "Boundary Lab — verdict examples",
+  "demonstration": true,
+  "notice": "Fictional scenarios for education only. These are not real audit results and are not a report compatible with report-schema.json.",
+  "examples": {
+    "confirmed": {
+      "label": "CONFIRMED",
+      "className": "confirmed",
+      "title": "A boundary violation is observed.",
+      "rows": [
+        [
+          "Trust boundary",
+          "A user in tenant A must not be able to read documents belonging to tenant B."
+        ],
+        [
+          "Illustrative evidence",
+          "In this fictional local test, an authenticated user from tenant A reads a dummy document owned by tenant B."
+        ],
+        [
+          "Remediation direction",
+          "Verify the current user's tenant and the document's ownership before returning any data."
+        ]
+      ],
+      "note": "A real finding must include the complete source path, validation conditions, and observed impact."
+    },
+    "needs_validation": {
+      "label": "NEEDS VALIDATION",
+      "className": "pending",
+      "title": "A critical fact is still unknown.",
+      "rows": [
+        [
+          "Source hypothesis",
+          "Authentication is delegated to an external gateway, so the application alone does not show the full control."
+        ],
+        [
+          "Unresolved fact",
+          "The authentication policy applied to this route by the deployed gateway still needs to be verified."
+        ],
+        [
+          "Next check",
+          "Ask the owner to confirm the configuration, or reproduce the relevant policy in an isolated local environment."
+        ]
+      ],
+      "note": "Do not assign severity to an item awaiting validation. An unverified hypothesis is not a confirmed vulnerability."
+    },
+    "rejected": {
+      "label": "REJECTED",
+      "className": "rejected",
+      "title": "An existing control blocks the path.",
+      "rows": [
+        [
+          "Initial candidate",
+          "A user-supplied file path appeared capable of escaping its permitted directory."
+        ],
+        [
+          "Counterevidence",
+          "In this fictional example, the trusted input layer normalizes the path and rejects access outside the root before it reaches the file operation."
+        ],
+        [
+          "Final judgment",
+          "The actual input path is blocked by an effective control, so the candidate is rejected."
+        ]
+      ],
+      "note": "A missing additional defense is not itself a vulnerability when an existing control already prevents the attack."
+    }
+  }
+}
